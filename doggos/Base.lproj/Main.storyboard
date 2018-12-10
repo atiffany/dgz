@@ -1,24 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A72-Xe-MwP">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Landing View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Landing View Controller" customClass="LandingPageViewController" customModule="doggos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doggos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsO-YY-8ZI">
+                                <rect key="frame" x="0.0" y="111" width="375" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="vSI-55-0LC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GP-Kd-wIj">
+                                <rect key="frame" x="0.0" y="491" width="375" height="48"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="D7T-XH-Q5Y"/>
+                                </constraints>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="dex-KD-KhC" kind="show" identifier="Voting" id="tTu-KY-iXH"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3EW-io-4fq">
+                                <rect key="frame" x="0.0" y="283" width="375" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="mTk-mH-DxH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1GP-Kd-wIj" firstAttribute="top" secondItem="3EW-io-4fq" secondAttribute="bottom" constant="8" id="HTL-VM-4PB"/>
+                            <constraint firstItem="1GP-Kd-wIj" firstAttribute="trailing" secondItem="3EW-io-4fq" secondAttribute="trailing" id="J0A-DF-0gu"/>
+                            <constraint firstItem="1GP-Kd-wIj" firstAttribute="leading" secondItem="vsO-YY-8ZI" secondAttribute="leading" id="QqD-Vq-H9y"/>
+                            <constraint firstItem="1GP-Kd-wIj" firstAttribute="top" secondItem="3EW-io-4fq" secondAttribute="bottom" constant="8" symbolic="YES" id="RTc-nM-isv"/>
+                            <constraint firstItem="vsO-YY-8ZI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="UMb-c8-vqM"/>
+                            <constraint firstItem="1GP-Kd-wIj" firstAttribute="trailing" secondItem="vsO-YY-8ZI" secondAttribute="trailing" id="Ubj-rB-8s1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1GP-Kd-wIj" secondAttribute="bottom" constant="239" id="ckB-3y-XwJ"/>
+                            <constraint firstItem="1GP-Kd-wIj" firstAttribute="leading" secondItem="3EW-io-4fq" secondAttribute="leading" id="gvn-fI-ALH"/>
+                            <constraint firstItem="1GP-Kd-wIj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gyJ-aj-TWF"/>
+                            <constraint firstItem="1GP-Kd-wIj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ojK-9B-9Gv"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hI7-GT-9iR"/>
+                    <connections>
+                        <outlet property="landingImage" destination="3EW-io-4fq" id="4mV-Hf-q5Z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="133.5832083958021"/>
+        </scene>
+        <!--Voting View Controller-->
+        <scene sceneID="vN4-Gf-Ivg">
+            <objects>
+                <viewController id="dex-KD-KhC" userLabel="Voting View Controller" customClass="VotingViewController" customModule="doggos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="Hjx-Jw-g7j">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D8p-QD-Mew">
+                                <rect key="frame" x="0.0" y="242" width="375" height="328"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dog du Jour" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lg-1d-AbT">
+                                <rect key="frame" x="100" y="120" width="174" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D8p-QD-Mew" firstAttribute="leading" secondItem="idT-SF-NjQ" secondAttribute="leading" id="FCc-ck-cFN"/>
+                            <constraint firstItem="D8p-QD-Mew" firstAttribute="centerX" secondItem="6Lg-1d-AbT" secondAttribute="centerX" id="PFc-Z1-8Z6"/>
+                            <constraint firstItem="idT-SF-NjQ" firstAttribute="bottom" secondItem="D8p-QD-Mew" secondAttribute="bottom" constant="208" id="X0B-6t-oz2"/>
+                            <constraint firstItem="6Lg-1d-AbT" firstAttribute="top" secondItem="idT-SF-NjQ" secondAttribute="top" constant="32" id="l4a-Jn-0M2"/>
+                            <constraint firstItem="6Lg-1d-AbT" firstAttribute="leading" secondItem="idT-SF-NjQ" secondAttribute="leading" constant="100" id="oNW-Y4-3N9"/>
+                            <constraint firstItem="D8p-QD-Mew" firstAttribute="trailing" secondItem="idT-SF-NjQ" secondAttribute="trailing" id="siT-42-y0w"/>
+                            <constraint firstItem="D8p-QD-Mew" firstAttribute="centerY" secondItem="Hjx-Jw-g7j" secondAttribute="centerY" id="xlQ-b2-siU"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="0.0" left="20" bottom="0.0" right="20"/>
+                        <viewLayoutGuide key="safeArea" id="idT-SF-NjQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="dogImage" destination="D8p-QD-Mew" id="HRA-gk-WCe"/>
+                        <segue destination="ps2-gN-Ppf" kind="show" id="vkJ-oA-KhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qxd-vm-hQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1842.4000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="MiH-l7-uib">
+            <objects>
+                <viewController id="ps2-gN-Ppf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acL-o8-U51">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4WZ-AQ-Hca" customClass="doggoTwo">
+                                <rect key="frame" x="190" y="312" width="185" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kj4-Fo-GPp" customClass="doggoOne">
+                                <rect key="frame" x="0.0" y="312" width="188" height="180"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DbF-f1-6uG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b9S-vU-mtY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2656.8000000000002" y="132.26600985221674"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0o4-fi-4mG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A72-Xe-MwP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="EM7-e6-ToK">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="HXq-FY-QDs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YMR-LI-aXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

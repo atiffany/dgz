@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		29991FEE211BDAC000550FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29991FED211BDAC000550FF6 /* AppDelegate.swift */; };
-		29991FF0211BDAC000550FF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29991FEF211BDAC000550FF6 /* ViewController.swift */; };
+		29991FF0211BDAC000550FF6 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29991FEF211BDAC000550FF6 /* LandingPageViewController.swift */; };
 		29991FF3211BDAC000550FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29991FF1211BDAC000550FF6 /* Main.storyboard */; };
 		29991FF5211BDAC300550FF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29991FF4211BDAC300550FF6 /* Assets.xcassets */; };
 		29991FF8211BDAC300550FF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29991FF6211BDAC300550FF6 /* LaunchScreen.storyboard */; };
+		29992000211BE07700550FF6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29991FFF211BE07700550FF6 /* Localizable.strings */; };
+		29992002211BECC100550FF6 /* VotingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29992001211BECC100550FF6 /* VotingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		29991FEA211BDAC000550FF6 /* doggos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = doggos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29991FED211BDAC000550FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		29991FEF211BDAC000550FF6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		29991FEF211BDAC000550FF6 /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		29991FF2211BDAC000550FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		29991FF4211BDAC300550FF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29991FF7211BDAC300550FF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29991FF9211BDAC300550FF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29991FFF211BE07700550FF6 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		29992001211BECC100550FF6 /* VotingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VotingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				29991FED211BDAC000550FF6 /* AppDelegate.swift */,
-				29991FEF211BDAC000550FF6 /* ViewController.swift */,
+				29991FEF211BDAC000550FF6 /* LandingPageViewController.swift */,
 				29991FF1211BDAC000550FF6 /* Main.storyboard */,
 				29991FF4211BDAC300550FF6 /* Assets.xcassets */,
 				29991FF6211BDAC300550FF6 /* LaunchScreen.storyboard */,
 				29991FF9211BDAC300550FF6 /* Info.plist */,
+				29991FFF211BE07700550FF6 /* Localizable.strings */,
+				29992001211BECC100550FF6 /* VotingViewController.swift */,
 			);
 			path = doggos;
 			sourceTree = "<group>";
@@ -123,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				29991FF8211BDAC300550FF6 /* LaunchScreen.storyboard in Resources */,
+				29992000211BE07700550FF6 /* Localizable.strings in Resources */,
 				29991FF5211BDAC300550FF6 /* Assets.xcassets in Resources */,
 				29991FF3211BDAC000550FF6 /* Main.storyboard in Resources */,
 			);
@@ -135,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29991FF0211BDAC000550FF6 /* ViewController.swift in Sources */,
+				29991FF0211BDAC000550FF6 /* LandingPageViewController.swift in Sources */,
 				29991FEE211BDAC000550FF6 /* AppDelegate.swift in Sources */,
+				29992002211BECC100550FF6 /* VotingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
